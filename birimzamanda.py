@@ -2,9 +2,10 @@ print('Birim zamanda sabit bir hızla alınan yolu hesaplama botuna hoş geldini
 secenek = input("""
 Hangi bilinmeyeni hesaplamak istiyorsunuz? Yazınız:
     
-ALINAN YOL
-SABIT SURAT
-ZAMAN
+ALINAN YOL (x)
+SABIT SURAT (v)
+ZAMAN (t)
+
 
 """)
 
@@ -16,17 +17,20 @@ if secenek.upper() == "ALINAN YOL":
   
     
 if secenek.upper() == "SABIT SURAT":
-    x = float(input("X değerimiz kaç olsun? "))    
+    x = float(input("X (alınan yol) değerimiz kaç olsun? "))    
     t = float(input("t (zaman) değerimiz kaç olsun? ")) 
     v = x / t
-    print("Sabit sürat (x) {}".format(x))
+    print("Sabit sürat (v) {}".format(x))
   
   
 if secenek.upper() == "ZAMAN":
-    x = float(input("X değerimiz kaç olsun? "))
+    x = float(input("X (alınan yol) değerimiz kaç olsun? "))
     v = float(input("V (sabit hız) değerimiz kaç olsun? "))    
     t = x / v
-    print("Zaman (x) {}".format(x))
+    print("Zaman (t) {}".format(x))
+    
+else:
+    print("Lütfen 3 değerden bir tanesini seçiniz! ")
     
 
   
