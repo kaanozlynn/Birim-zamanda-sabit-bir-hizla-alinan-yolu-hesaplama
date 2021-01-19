@@ -20,14 +20,14 @@ if secenek.upper() == "SABIT SURAT":
     x = float(input("X (alınan yol) değerimiz kaç olsun? "))    
     t = float(input("t (zaman) değerimiz kaç olsun? ")) 
     v = x / t
-    print("Sabit sürat (v) {}".format(x))
+    print("Sabit sürat (v) {}".format(v))
   
   
 if secenek.upper() == "ZAMAN":
     x = float(input("X (alınan yol) değerimiz kaç olsun? "))
     v = float(input("V (sabit hız) değerimiz kaç olsun? "))    
     t = x / v
-    print("Zaman (t) {}".format(x))
+    print("Zaman (t) {}".format(t))
     
 else:
     print("Lütfen 3 değerden bir tanesini seçiniz! ")
